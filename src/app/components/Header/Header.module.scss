@@ -1,0 +1,13 @@
+.header {
+  @apply flex h-[60px];
+
+  :global {
+    .app-bar {
+      @apply bg-purple h-full shadow-none;
+    }
+
+    .tool-bar {
+      @apply h-full pr-0;
+    }
+  }
+}

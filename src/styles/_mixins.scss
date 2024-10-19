@@ -1,0 +1,11 @@
+﻿@mixin media-xs() {
+  @media (max-width: 766px) {
+    @content;
+  }
+}
+
+@mixin section-default() {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
+}

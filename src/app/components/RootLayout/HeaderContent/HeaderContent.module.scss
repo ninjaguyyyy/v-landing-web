@@ -1,0 +1,24 @@
+.logo {
+  @apply w-[172px] h-full;
+}
+
+.menu {
+  @apply bg-transparent w-full h-[30px] items-center px-1 justify-between mb-2
+  lg:w-fit lg:ml-8 lg:h-full lg:mb-0 lg:justify-normal;
+
+  :global {
+    .ant-menu-overflow-item.ant-menu-item.ant-menu-item-only-child {
+      @apply font-bold text-white p-2 flex-1
+      lg:ml-10 lg:p-4 lg:flex-none;
+
+      &.ant-menu-item-selected {
+        background: none;
+        @apply text-yellow-400;
+      }
+
+      &:hover {
+        @apply text-yellow-400;
+      }
+    }
+  }
+}

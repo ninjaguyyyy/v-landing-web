@@ -1,0 +1,21 @@
+.search {
+  @apply w-full h-full;
+
+  :global {
+    .input {
+      @apply w-full h-full bg-purple-2 text-white px-4 font-semibold text-[0.875rem] py-0;
+
+      input {
+        @apply py-0;
+      }
+    }
+
+    .MuiInputBase-root.MuiInput-root.MuiInput-underline {
+      @apply before:border-none #{!important};
+    }
+
+    .Mui-focused {
+      @apply after:border-none #{!important};
+    }
+  }
+}
