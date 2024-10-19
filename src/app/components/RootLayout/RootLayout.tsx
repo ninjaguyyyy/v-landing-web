@@ -4,24 +4,19 @@ import React from 'react';
 import { HeaderContent } from './HeaderContent';
 import { FooterContent } from './FooterContent';
 import classes from './RootLayout.module.scss';
+import classNames from 'classnames';
+import { montserrat } from 'app/fonts';
 
 const { Header, Content, Footer } = Layout;
 
 export function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <Layout className={classes.layout}>
+    <Layout className={classNames(classes.layout, montserrat.className)}>
       <Header className="header">
         <HeaderContent />
       </Header>
-      <Content style={{ padding: '0 48px' }}>
-        <div
-          style={{
-            minHeight: 280,
-            padding: 24,
-          }}
-        >
-          <main className={classes.main}>{children}</main>
-        </div>
+      <Content>
+        <main className={classes.main}>{children}</main>
       </Content>
       <Footer style={{ textAlign: 'center' }}>
         <FooterContent />

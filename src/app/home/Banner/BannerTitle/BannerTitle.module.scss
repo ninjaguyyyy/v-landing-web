@@ -1,0 +1,32 @@
+.wrapper {
+  @apply px-4 mt-0 absolute top-0 left-0 z-50
+  lg:mt-[100px] lg:static lg:text-right;
+
+  :global {
+    .title {
+      @apply text-[36px] italic font-normal mt-0 text-black mb-0
+      lg:text-[60px] lg:text-darkgray;
+
+      text-shadow: rgb(210, 250, 240) 4px 4px 0px;
+      line-height: 1;
+
+      &.first {
+        @apply mr-0 mb-2
+        lg:mr-[160px];
+      }
+
+      &.highlight {
+        @apply text-black text-[70px] font-bold relative
+        lg:text-[100px];
+
+        &::before {
+          @apply absolute top-0 left-0 w-full h-full blur-[40px] mix-blend-screen
+          lg:blur-[20px];
+          content: '';
+          display: block;
+          background-image: linear-gradient(rgb(0, 68, 223), rgb(7, 226, 181));
+        }
+      }
+    }
+  }
+}

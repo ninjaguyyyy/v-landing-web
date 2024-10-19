@@ -1,3 +1,9 @@
+import { Banner } from 'app/home/Banner';
+
 export default function Home() {
-  return <section className="">Home</section>;
+  return (
+    <>
+      <Banner />
+    </>
+  );
 }

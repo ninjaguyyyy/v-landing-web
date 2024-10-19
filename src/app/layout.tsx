@@ -3,11 +3,7 @@ import { Montserrat } from 'next/font/google';
 import 'styles/global.scss';
 import React from 'react';
 import { RootLayout as RootLayoutComp } from './components/RootLayout';
-
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  display: 'swap',
-});
+import { montserrat } from 'app/fonts';
 
 export const metadata: Metadata = {
   title: 'Create Next App',

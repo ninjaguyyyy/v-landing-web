@@ -32,6 +32,7 @@ const config: Config = {
         'gray-5': '#eaeaf5',
         'gray-6': '#fcfcfd',
         'gray-7': '#c5bdbd',
+        darkgray: 'rgb(84, 84, 84)',
 
         lightblue: 'rgb(176, 237, 255)',
 

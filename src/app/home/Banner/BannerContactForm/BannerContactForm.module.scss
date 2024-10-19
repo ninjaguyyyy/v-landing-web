@@ -1,0 +1,68 @@
+.form {
+  @apply w-full relative px-4 pt-[50px] pb-4
+  lg:w-[960px] lg:px-8 lg:pt-[70px] lg:pb-8;
+
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+
+  :global {
+    .banner-header {
+      @apply absolute top-[-32px] left-[0px] px-4 mb-5
+      lg:left-[80px] lg:top-[-30px];
+    }
+
+    .title {
+      @apply text-[35px] font-semibold m-0 text-darkgray
+      lg:text-[40px];
+
+      text-shadow: rgb(210, 250, 240) 4px 4px 0;
+    }
+
+    .subTitle {
+      @apply mt-0 text-[13px] text-darkgray
+      lg:text-base;
+    }
+
+    .wrapper {
+      @apply grid grid-cols-2 gap-4 items-center
+      lg:grid-cols-5 lg:gap-2;
+
+    }
+
+    .input, .select {
+      padding: 10px;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .select {
+      appearance: none;
+      background-color: white;
+    }
+
+    .button {
+      @apply col-span-2
+      lg:col-span-1;
+      padding: 10px 20px;
+      background: linear-gradient(to right, #0047ff, #00d4ff);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+
+      &:hover {
+        background: linear-gradient(to right, #0034cc, #0099ff);
+      }
+    }
+
+  }
+}
+
