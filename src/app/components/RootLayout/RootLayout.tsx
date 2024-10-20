@@ -18,7 +18,7 @@ export function RootLayout({ children }: { children: React.ReactNode }) {
       <Content>
         <main className={classes.main}>{children}</main>
       </Content>
-      <Footer style={{ textAlign: 'center' }}>
+      <Footer className="footer">
         <FooterContent />
       </Footer>
     </Layout>

@@ -1,6 +1,6 @@
 .banner {
-  @apply h-[440px] grid grid-cols-5 gap-4 relative
-  lg:h-[770px];
+  @apply h-[440px] grid grid-cols-5 gap-4 relative mb-32
+  lg:h-[770px] lg:mb-0;
 
   :global {
     .left {

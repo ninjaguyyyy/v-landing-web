@@ -8,5 +8,10 @@
       top: 0;
       z-index: 1000;
     }
+
+    .footer {
+      @apply bg-[#161223] text-white px-[24px] py-[12px]
+      lg:px-[50px] lg:py-[24px];
+    }
   }
 }

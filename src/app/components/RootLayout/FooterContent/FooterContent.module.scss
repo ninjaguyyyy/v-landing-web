@@ -1,0 +1,28 @@
+.container {
+  @apply w-full flex flex-col items-center mx-auto
+  lg:w-[960px];
+
+  :global {
+    .logo {
+      @apply w-[200px] h-[55px]
+      lg:w-[275px] lg:h-[77px];
+    }
+
+    .list-wrapper {
+      @apply flex flex-col w-full pb-8
+      lg:flex-row lg:gap-[100px];
+    }
+
+    .heading-title {
+      @apply font-bold text-[18px];
+    }
+
+    .list {
+      @apply list-none pl-0 flex flex-col gap-3;
+    }
+
+    .line {
+      @apply h-[1px] w-full bg-gray-2;
+    }
+  }
+}

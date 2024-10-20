@@ -3,7 +3,7 @@
 }
 
 .menu {
-  @apply bg-transparent w-full h-[30px] items-center px-1 justify-between mb-2
+  @apply bg-transparent w-full h-[30px] items-center px-1 justify-between mb-2 flex-1 min-w-0
   lg:w-fit lg:ml-8 lg:h-full lg:mb-0 lg:justify-normal;
 
   :global {
@@ -19,6 +19,22 @@
       &:hover {
         @apply text-yellow-400;
       }
+    }
+  }
+}
+
+.phone-group {
+  @apply flex items-center relative;
+
+  img {
+    @apply w-[40px] h-[36px] z-10
+    lg:h-[40px];
+  }
+
+  :global {
+    .phone-no {
+      @apply bg-lightblue h-[28px] flex items-center rounded-[100px] px-3 text-base font-bold text-darkblue translate-x-[-10px]
+      lg:h-[36px];
     }
   }
 }

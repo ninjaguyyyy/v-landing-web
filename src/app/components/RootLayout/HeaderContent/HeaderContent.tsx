@@ -13,25 +13,13 @@ export function HeaderContent() {
       <Menu
         theme="dark"
         mode="horizontal"
-        defaultSelectedKeys={['2']}
         items={MENU}
-        style={{ flex: 1, minWidth: 0 }}
         className={classes.menu}
       />
 
-      <div className={'flex items-center relative'}>
-        <Image
-          src={Phone}
-          alt={'contact'}
-          className={'w-[40px] h-[36px] z-10 lg:h-[40px]}'}
-        />
-        <div
-          className={
-            'bg-lightblue h-[28px] lg:h-[36px] flex items-center rounded-[100px] px-3 text-base font-bold text-darkblue translate-x-[-10px]'
-          }
-        >
-          09.38.17.22.94
-        </div>
+      <div className={classes['phone-group']}>
+        <Image src={Phone} alt="contact" />
+        <div className="phone-no">09.38.17.22.94</div>
       </div>
     </>
   );

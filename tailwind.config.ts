@@ -41,6 +41,8 @@ const config: Config = {
         blue: '#00c7d9',
         darkblue: 'rgb(49, 49, 186)',
         'darkblue-2': 'rgb(5, 34, 74)',
+
+        'black-1': '#161200',
       },
     },
   },
