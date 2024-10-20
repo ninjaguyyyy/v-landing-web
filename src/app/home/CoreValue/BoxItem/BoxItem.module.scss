@@ -1,0 +1,34 @@
+.box {
+  @apply flex flex-col items-center justify-between py-4 px-4 w-full h-[200px]
+  lg:w-[234px] lg:h-[247px] lg:py-8 lg:px-10;
+
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, rgb(0, 70, 223), rgb(9, 226, 181));
+
+  :global {
+    .heading {
+      @apply text-darkgray text-[15px] text-center;
+    }
+
+    .text-effect {
+      @apply text-black text-[32px] font-bold relative mb-4 ml-2
+      lg:text-[40px];
+
+      &::before {
+        @apply absolute top-0 left-0 w-full h-full blur-[10px] mix-blend-screen
+        lg:blur-[10px];
+        content: '';
+        display: block;
+        background-image: linear-gradient(rgb(0, 68, 223), rgb(7, 226, 181));
+      }
+    }
+
+    .end {
+      @apply text-blue-1 text-[15px] text-center font-semibold;
+    }
+  }
+
+
+
+}

@@ -1,0 +1,16 @@
+.container {
+  @apply bg-white py-[20px]
+  lg:py-[80px];
+
+  :global {
+    .wrapper {
+      @apply grid grid-cols-2 gap-4 px-4
+      lg:flex lg:justify-center lg:gap-6;
+    }
+
+    .top-5 {
+      @apply py-6 text-white font-bold text-base w-[360px] mx-auto text-center mt-12;
+      background: linear-gradient(90deg, rgb(0, 70, 223), rgb(9, 226, 181))
+    }
+  }
+}
