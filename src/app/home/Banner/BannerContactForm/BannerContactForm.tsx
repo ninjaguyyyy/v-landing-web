@@ -6,7 +6,7 @@ export function BannerContactForm() {
   return (
     <form className={classNames(classes.form, montserrat.className)}>
       <div className="banner-header">
-        <h1 className="title">Tư vấn</h1>
+        <h1 className="text-title">Tư vấn</h1>
         <p className="subTitle">MIỄN PHÍ 24/7/365</p>
       </div>
       <div className="wrapper">

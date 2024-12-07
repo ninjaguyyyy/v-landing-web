@@ -1,4 +1,7 @@
+import { FontSize } from './node_modules/csstype/index.d';
 import type { Config } from 'tailwindcss';
+
+const plugin = require('tailwindcss/plugin');
 
 const config: Config = {
   content: [
@@ -12,6 +15,8 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-primary':
+          'linear-gradient(90deg, rgb(0, 70, 223), rgb(9, 226, 181))',
       },
 
       colors: {
@@ -44,10 +49,59 @@ const config: Config = {
         'darkblue-2': 'rgb(5, 34, 74)',
 
         'black-1': '#161200',
+        'yellow-primary': '#fbe95b',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(
+      ({
+        addComponents,
+      }: {
+        addComponents: (components: Record<string, any>) => void;
+      }) => {
+        addComponents({
+          '.text-h1': {
+            fontSize: '21px',
+            fontWeight: 700,
+            lineHeight: '1.6',
+            '@media screen and (min-width: 48rem)': {
+              fontSize: '62.69px',
+            },
+          },
+
+          '.text-h3': {
+            fontSize: '18px',
+            lineHeight: '1.6',
+            fontWeight: 400,
+            '@media screen and (min-width: 48rem)': {
+              fontSize: '36.05px',
+            },
+          },
+
+          '.text-h5': {
+            fontSize: '13px',
+            lineHeight: '1.6',
+            fontWeight: 400,
+            '@media screen and (min-width: 48rem)': {
+              fontSize: '19px',
+            },
+          },
+
+          '.text-title': {
+            fontSize: '35px',
+            fontWeight: 'bold',
+            margin: 0,
+            color: '#545454',
+            '@media screen and (min-width: 48rem)': {
+              fontSize: '40px',
+            },
+            textShadow: '4px 4px 0 rgb(210, 250, 240)',
+          },
+        });
+      }
+    ),
+  ],
   corePlugins: {
     preflight: false,
   },
