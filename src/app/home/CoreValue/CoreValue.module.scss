@@ -9,8 +9,40 @@
     }
 
     .top-5 {
-      @apply py-6 text-white font-bold text-base w-[360px] mx-auto text-center mt-12;
-      background: linear-gradient(90deg, rgb(0, 70, 223), rgb(9, 226, 181))
+      @apply py-6 text-white font-bold text-base w-[360px] mx-auto text-center mt-12 bg-gradient-primary;
     }
   }
 }
+.company-introduction-content {
+  @apply flex  bg-[url('../../../statics/images/background-image.jpg')] bg-center bg-no-repeat justify-center text-white font-bold  text-center gap-10 p-10 flex-col md:flex-row   ;        
+
+  .image {
+    @apply rounded-lg border-4 border-dashed border-white w-3/4 h-auto;
+  }
+
+
+
+}
+
+
+.content {
+  @apply w-[432.5px] text-left pb-12 bg-white max-h-fit md:mt-[50%] md:-translate-y-1/2;
+  box-shadow: rgba(1, 1, 1, 0.1) 2px 7px 15px 0px;
+
+}
+
+.right-content {
+  @apply grid grid-cols-2 gap-1;
+
+  .box-custom {
+    @apply px-1;
+   }
+}
+
+
+.digital-marketing {
+  @apply bg-[#013273] bg-opacity-30 text-white text-center flex flex-col justify-center items-center gap-y-4 pt-10 pb-14 mt-5;
+}
+
+
+

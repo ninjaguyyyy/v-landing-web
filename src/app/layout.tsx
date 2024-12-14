@@ -4,6 +4,8 @@ import 'styles/global.scss';
 import React from 'react';
 import { RootLayout as RootLayoutComp } from './components/RootLayout';
 import { montserrat } from 'app/fonts';
+import Link from 'next/link';
+import { Contact } from './components/Contact/Contact';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -19,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={montserrat.className}>
         <RootLayoutComp>{children}</RootLayoutComp>
+        <Contact />
       </body>
     </html>
   );

@@ -15,13 +15,6 @@
       lg:left-[80px] lg:top-[-30px];
     }
 
-    .title {
-      @apply text-[35px] font-semibold m-0 text-darkgray
-      lg:text-[40px];
-
-      text-shadow: rgb(210, 250, 240) 4px 4px 0;
-    }
-
     .subTitle {
       @apply mt-0 text-[13px] text-darkgray
       lg:text-base;
