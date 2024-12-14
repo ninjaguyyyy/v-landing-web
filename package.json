@@ -22,6 +22,7 @@
     "react-dom": "18",
     "react-hook-form": "7.51.3",
     "react-icons": "5.0.1",
+    "resend": "4.0.1-alpha.0",
     "sass": "1.69.7",
     "sharp": "0.33.1",
     "swiper": "11.1.12"

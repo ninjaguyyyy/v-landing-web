@@ -4,7 +4,7 @@ export const Contact = () => {
   return (
     <div className='fixed bottom-0 right-0 transform -translate-y-1/2 z-100'>
       <Link
-        href="tel:0938172294"
+        href="tel:0977678488"
       >
         <div >
           <svg
@@ -24,9 +24,9 @@ export const Contact = () => {
         </div>
       </Link>
       <Link
-        href="https://zalo.me/2441599563987709272"
+        href="https://zaloapp.com/qr/p/jjytcrsgwt70"
         target="_blank"
-        data-replace-href="https://zalo.me/2441599563987709272"
+        data-replace-href="https://zaloapp.com/qr/p/jjytcrsgwt70"
       >
         <div>
           <svg
@@ -46,9 +46,8 @@ export const Contact = () => {
         </div>
       </Link>
       <Link
-        href="https://m.me/congtyvesinhtphcm"
+        href="https://www.facebook.com/share/1MyWgpUFNd/?mibextid=LQQJ4d"
         target="_blank"
-        data-replace-href="https://m.me/congtyvesinhtphcm"
       >
         <div>
           <svg

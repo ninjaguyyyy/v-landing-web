@@ -49,10 +49,13 @@
       border-radius: 4px;
       font-size: 16px;
       cursor: pointer;
+      height: 40px;
       transition: background 0.3s;
+      line-height: normal;
 
       &:hover {
         background: linear-gradient(to right, #0034cc, #0099ff);
+        color: white !important;
       }
     }
 
