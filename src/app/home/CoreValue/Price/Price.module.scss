@@ -1,0 +1,9 @@
+.input {
+  @apply border-none rounded-lg text-[11px] p-3 font-thin;
+}
+.star-icon{
+  @apply w-[80px] h-[80px] bg-[#3d87ff] p-4 rounded-[50%] relative;
+}
+.icon-container {
+  @apply flex flex-col text-center gap-y-1 items-center justify-center;
+}

@@ -1,0 +1,8 @@
+.content {
+  @apply flex flex-col gap-y-4 w-full md:w-2/5 pr-8 md:pr-44 border py-8 pl-8 md:my-32;
+  box-shadow: rgba(1, 1, 1, 0.1) 2px 7px 15px 0px;
+}
+
+.button {
+  @apply rounded py-4 px-[40px] ;
+}

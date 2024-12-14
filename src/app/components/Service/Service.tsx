@@ -21,10 +21,11 @@ type ServiceProps = {
 
 export const Service1 = ({ title, description, content, image }: ServiceProps) => {
   return (
-    <div className='flex gap-x-10 ml-20 3xl:mx-auto gap-y-10 '>
-      <div className='w-[600px] flex flex-col gap-y-5 pt-24' >
+    <div className='flex flex-col md:flex-row gap-x-10 gap-y-10 items-center justify-center '>
+      <Image src={image} alt='image' className='w-full md:w-1/2 h-fit block md:hidden' />
+      <div className='flex flex-col gap-y-5 w-full md:w-1/2 px-4' >
         <div className='text-h5 mb-3'>DỊCH VỤ</div>
-        <div className='text-title font-normal text-[50px]'>{title}</div>
+        <div className='text-title font-normal text-[35px] md:text-[50px]'>{title}</div>
         <div>{description}</div>
         {content.map((item, index) =>
         (
@@ -34,7 +35,7 @@ export const Service1 = ({ title, description, content, image }: ServiceProps) =
               <div className='font-bold'>{item.title}</div>
             </div>
 
-            <ul className='flex flex-col gap-y-1'>{Array.isArray(item.description) ? item.description.map((desc, idx) => (<li key={idx}>{desc}</li>)) : item.description}</ul>
+            <div className='flex flex-col gap-y-1 pl-6'>{Array.isArray(item.description) ? item.description.map((desc, idx) => (<div key={idx}>{desc}</div>)) : item.description}</div>
           </div>
         ))}
         <div className='mx-auto'>
@@ -47,9 +48,8 @@ export const Service1 = ({ title, description, content, image }: ServiceProps) =
 
 
       </div>
-      <div className="right-content">
-        <Image src={image} alt='image' className='w-[780px] h-[800px]' />
-      </div>
+      <Image src={image} alt='image' className='w-full md:w-1/2 h-fit hidden md:block' />
+
     </div>
 
   )
@@ -57,14 +57,12 @@ export const Service1 = ({ title, description, content, image }: ServiceProps) =
 
 export const Service2 = ({ title, description, content, image }: ServiceProps) => {
   return (
-    <div className='flex text-white'>
-      <div >
-        <Image src={image} alt='image' className='w-[780px] h-[800px]' />
-      </div>
-      <div className='w-[500px] flex flex-col gap-y-5 pt-24' >
-        <div className="bg-gradient-primary pl-10 flex flex-col gap-y-5 py-5">
+    <div className='flex flex-col md:flex-row text-white items-center' >
+      <Image src={image} alt='image' className='w-full md:w-1/2 h-fit' />
+      <div className='flex flex-col w-full md:w-1/2 gap-y-5' >
+        <div className="bg-gradient-primary flex flex-col gap-y-5 p-5">
           <div className='text-h5'>DỊCH VỤ</div>
-          <div className='font-normal text-[50px]'>{title}</div>
+          <div className='font-normal  text-white md:text-[50px] text-[35px] '>{title}</div>
           <div className="description">{description}</div>
           {content.map((item, index) =>
           (
@@ -76,7 +74,7 @@ export const Service2 = ({ title, description, content, image }: ServiceProps) =
                 <div className='font-bold'>{item.title}</div>
               </div>
 
-              {item.description && <ul className='flex flex-col gap-y-1'>{Array.isArray(item.description) ? item.description.map((desc, idx) => (<li key={idx}>{desc}</li>)) : item.description}</ul>}
+              {item.description && <div className='flex flex-col gap-y-1 list-none pl-6'>{Array.isArray(item.description) ? item.description.map((desc, idx) => (<div key={idx}>{desc}</div>)) : item.description}</div>}
             </div>
           ))}
         </div>
@@ -98,8 +96,8 @@ export const Service2 = ({ title, description, content, image }: ServiceProps) =
 export const Service = ({ index, ...props }: ServiceProps & { index: number }) => {
 
   return (
-    <>
+    <div className=' md:px-10'>
       {index % 2 === 0 ? <Service1 {...props} /> : <Service2 {...props} />}
-    </>
+    </div>
   )
 }

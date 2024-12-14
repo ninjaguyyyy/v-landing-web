@@ -1,4 +1,3 @@
-import { FontSize } from './node_modules/csstype/index.d';
 import type { Config } from 'tailwindcss';
 
 const plugin = require('tailwindcss/plugin');
@@ -11,6 +10,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      clipPath: {
+        star: 'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -50,6 +52,7 @@ const config: Config = {
 
         'black-1': '#161200',
         'yellow-primary': '#fbe95b',
+        'blue-primary': '#051f4d',
       },
     },
   },
@@ -97,6 +100,28 @@ const config: Config = {
               fontSize: '40px',
             },
             textShadow: '4px 4px 0 rgb(210, 250, 240)',
+          },
+          '.highlight': {
+            '@apply text-black text-[70px] font-bold relative lg:text-[100px]':
+              {},
+            '&::before': {
+              '@apply absolute top-0 left-0 w-full h-full blur-[40px] mix-blend-screen lg:blur-[20px]':
+                {},
+              content: '""',
+              display: 'block',
+              backgroundImage:
+                'linear-gradient(rgb(0, 68, 223), rgb(7, 226, 181))',
+            },
+          },
+          '.title': {
+            '@apply text-[36px] italic font-normal mt-0 text-black mb-0 lg:text-[60px] lg:text-darkgray':
+              {},
+            textShadow: 'rgb(210, 250, 240) 4px 4px 0px',
+            lineHeight: 1,
+
+            '&.first': {
+              '@apply mr-0 mb-2 lg:mr-[160px]': {},
+            },
           },
         });
       }
