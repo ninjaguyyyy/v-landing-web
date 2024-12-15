@@ -12,13 +12,14 @@ import { Fondamento } from 'next/font/google';
 
 
 export const Price = () => {
-
-  const [formData, setFormData] = useState<FormData>({
-    name: "",
-    phone: "",
-    apartmentType: "",
+  const initialFormData = {
+    fullName: "",
+    phoneNumber: "",
+    service: "",
     address: "",
-  });
+  }
+
+  const [formData, setFormData] = useState<FormData>(initialFormData);
 
   const [response, setResponse] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
@@ -31,35 +32,10 @@ export const Price = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const payload = {
-      form_config_id: "639c43bbef42240012d7a203",
-      ladi_form_id: "FORM409",
-      ladipage_id: "64180a35b5153b0068a06f75",
-      tracking_form: [
-        { name: "url_page", value: "https://vesinhcongnghiep.tktg.vn/" },
-        { name: "utm_source", value: "" },
-        { name: "utm_medium", value: "" },
-        { name: "utm_campaign", value: "" },
-        { name: "utm_term", value: "" },
-        { name: "utm_content", value: "" },
-        { name: "variant_url", value: "" },
-        { name: "variant_content", value: "" },
-      ],
-      form_data: [
-        { name: "name", value: formData.name },
-        { name: "phone", value: formData.phone },
-        { name: "Địa chỉ", value: formData.address },
-        { name: " Nội dung", value: formData.apartmentType },
-      ],
-      data_key: null,
-      status_send: 2,
-      merge_address: false,
-      total_revenue: 0,
-      time_zone: 7,
-    };
     try {
-      const data = await sendFormData(payload);
+      const data = await sendFormData(formData);
       setResponse(data);
+      setFormData(initialFormData);
       setError(null);
     } catch (err: any) {
       setResponse(null);
@@ -81,16 +57,16 @@ export const Price = () => {
             <div className='flex flex-col gap-y-2'>
               <input placeholder='Họ và tên' className={classes['input']} id="name"
                 type="text"
-                name="name"
-                value={formData.name}
+                name="fullName"
+                value={formData.fullName}
                 onChange={handleChange}
                 required
               />
-              <input name="phone" type="tel" placeholder="Số điện thoại" pattern="(\+84|0){1}(9|8|7|5|3){1}[0-9]{8}" className={classes['input']} id="phone"
-                value={formData.phone}
+              <input name="phoneNumber" type="tel" placeholder="Số điện thoại" pattern="(\+84|0){1}(9|8|7|5|3){1}[0-9]{8}" className={classes['input']} id="phone"
+                value={formData.phoneNumber}
                 onChange={handleChange} />
               <input type="text" placeholder="Địa chỉ" value={formData.address} onChange={handleChange} className={classes['input']} name="address" />
-              <input type="text" placeholder="Chi tiết nhu cầu dịch vụ" value={formData.apartmentType} onChange={handleChange} name="apartmentType" className={classes['input']}></input>
+              <input type="text" placeholder="Chi tiết nhu cầu dịch vụ" value={formData.service} onChange={handleChange} name="service" className={classes['input']}></input>
             </div>
             <button className='text-[#292966] bg-[#b0edff] py-3 px-6 mt-4 rounded-lg border-none' type="submit">
               NHẬN BÁO GIÁ VÀ TƯ VẤN

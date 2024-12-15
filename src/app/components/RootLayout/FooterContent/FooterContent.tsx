@@ -22,7 +22,7 @@ export function FooterContent() {
           <ul className="list">
             <FooterItem
               icon={<HiHome />}
-              text="Address: 161 Ung Van Khiem, ward 25, Binh Thanh district, HCMC"
+              text="Address: Số 5, trần thế sinh, TT Bến lức, huyện Bến lức, tỉnh Long An"
             />
             <FooterItem
               icon={<HiPhone />}
