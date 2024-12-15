@@ -1,0 +1,7 @@
+.container {
+  :global {
+    .ant-float-btn-body, .ant-float-btn-icon {
+      @apply w-full bg-transparent #{!important};
+    }
+  }
+}

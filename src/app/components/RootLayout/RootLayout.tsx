@@ -6,6 +6,7 @@ import { FooterContent } from './FooterContent';
 import classes from './RootLayout.module.scss';
 import classNames from 'classnames';
 import { montserrat } from 'app/fonts';
+import { ContactFloatButtons } from 'app/components/ContactFloatButtons/ContactFloatButtons';
 
 const { Header, Content, Footer } = Layout;
 
@@ -21,6 +22,8 @@ export function RootLayout({ children }: { children: React.ReactNode }) {
       <Footer className="footer">
         <FooterContent />
       </Footer>
+
+      <ContactFloatButtons />
     </Layout>
   );
 }
