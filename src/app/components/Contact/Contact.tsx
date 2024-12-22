@@ -1,12 +1,10 @@
-import Link from "next/link"
+import Link from 'next/link';
 
 export const Contact = () => {
   return (
-    <div className='fixed bottom-0 right-0 transform -translate-y-1/2 z-100'>
-      <Link
-        href="tel:0977678488"
-      >
-        <div >
+    <div className="fixed bottom-[50px] right-[15px] z-[100]">
+      <Link href="tel:0977678488">
+        <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="60px"
@@ -66,5 +64,6 @@ export const Contact = () => {
           </svg>
         </div>
       </Link>
-    </div>)
-}
+    </div>
+  );
+};

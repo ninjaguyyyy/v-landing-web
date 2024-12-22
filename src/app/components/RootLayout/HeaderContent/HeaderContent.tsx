@@ -7,6 +7,14 @@ import classes from './HeaderContent.module.scss';
 import { MENU } from 'constants/menu';
 
 export function HeaderContent() {
+  function handleClickMenu(e: any) {
+    console.log('click', e);
+    const element = document.getElementById(e.key);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   return (
     <>
       <Image src={Logo} alt={'logo'} className={classes.logo} />
@@ -15,6 +23,7 @@ export function HeaderContent() {
         mode="horizontal"
         items={MENU}
         className={classes.menu}
+        onClick={handleClickMenu}
       />
 
       <div className={classes['phone-group']}>
