@@ -1,8 +1,7 @@
 import * as React from 'react';
-import { Customer } from 'type';
 
 interface EmailTemplateProps {
-  customer: Customer;
+  customer: any;
 }
 
 export const EmailTemplate = ({ customer }: EmailTemplateProps) => {

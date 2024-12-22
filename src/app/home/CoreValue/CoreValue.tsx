@@ -20,6 +20,7 @@ import { Price } from './Price/Price';
 import { HightlightService } from './HightlightService/HightlightService';
 import { LoyaltyCustomer } from './LoyalCustomer/LoyalCustomer';
 import Link from 'next/link';
+import { MenuKey } from 'constants/menu';
 
 const contentMap = [
   { effectText: `Tổng</br>Vệ Sinh` },
@@ -106,7 +107,10 @@ export function CoreValue() {
       </div>
 
       <p className="top-5">Vệ Sinh Công Nghiệp Top 5 tại Tp.HCM</p>
-      <div className={classes['company-introduction-content']}>
+      <div
+        className={classes['company-introduction-content']}
+        id={MenuKey.ABOUT_US}
+      >
         <div className="w-full md:w-3/5">
           <div className="text-yellow-primary text-h1">TKT COMPANY</div>
           <div className="text-h3">
@@ -146,7 +150,10 @@ export function CoreValue() {
             className="ml-[40%] overflow-hidden md:block hidden"
           />
 
-          <div className="md:absolute inset-0 flex items-center justify-center">
+          <div
+            className="md:absolute inset-0 flex items-center justify-center"
+            id={MenuKey.SERVICES}
+          >
             <div className="flex flex-col md:flex-row gap-x-8">
               <div className={classes['content']}>
                 <div className="bg-[#d2faf0] py-4 px-8 text-[24px]">
@@ -233,7 +240,6 @@ export function CoreValue() {
       <Price />
       <HightlightService />
       <LoyaltyCustomer />
-
     </section>
   );
 }

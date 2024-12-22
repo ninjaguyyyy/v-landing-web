@@ -1,6 +1,13 @@
-﻿export const MENU = [
-  { key: 1, label: 'Về chúng tôi' },
-  { key: 1, label: 'Dịch Vụ' },
-  { key: 1, label: 'Video thực tế' },
-  { key: 1, label: 'Báo Giá' },
+﻿export enum MenuKey {
+  ABOUT_US = 'about_us',
+  SERVICES = 'services',
+  VIDEO = 'video',
+  PRICES = 'prices',
+}
+
+export const MENU = [
+  { key: MenuKey.ABOUT_US, label: 'Về chúng tôi' },
+  { key: MenuKey.SERVICES, label: 'Dịch Vụ' },
+  { key: MenuKey.VIDEO, label: 'Video thực tế' },
+  { key: MenuKey.PRICES, label: 'Báo Giá' },
 ];
