@@ -8,6 +8,7 @@ import { sendFormData } from 'utils/formApi';
 import { FormData } from 'utils/formApi';
 import { Fondamento } from 'next/font/google';
 import { MenuKey } from 'constants/menu';
+import Loading from 'app/components/Loading/Loading';
 
 export const Price = () => {
   const initialFormData = {
@@ -21,6 +22,7 @@ export const Price = () => {
 
   const [response, setResponse] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -31,6 +33,7 @@ export const Price = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setLoading(true);
 
     try {
       const data = await sendFormData(formData);
@@ -40,6 +43,9 @@ export const Price = () => {
     } catch (err: any) {
       setResponse(null);
       setError(err.message);
+    }
+    finally {
+      setLoading(false); // Stop loading
     }
   };
 
@@ -103,6 +109,7 @@ export const Price = () => {
               NHẬN BÁO GIÁ VÀ TƯ VẤN
             </button>
           </form>
+          {loading && <Loading message="Đang gửi mail" />}
         </div>
         <div className="w-full md:w-3/5 flex flex-col gap-y-8 px-10">
           <div className="font-thin text-[20px]">Nhận báo giá Online</div>

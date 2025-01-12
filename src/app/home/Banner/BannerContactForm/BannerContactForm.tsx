@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import { montserrat } from 'app/fonts';
 import { useState } from 'react';
 import { sendFormData } from 'utils/formApi';
+import Loading from 'app/components/Loading/Loading';
 
 export function BannerContactForm() {
 
@@ -24,6 +25,7 @@ export function BannerContactForm() {
   const [formData, setFormData] = useState<FormData>(initialFormData);
 
   const [response, setResponse] = useState<any>(null);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
@@ -33,6 +35,7 @@ export function BannerContactForm() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setLoading(true);
 
     try {
       const data = await sendFormData(formData);
@@ -42,6 +45,9 @@ export function BannerContactForm() {
     } catch (err: any) {
       setResponse(null);
       setError(err.message);
+    }
+    finally {
+      setLoading(false);
     }
   };
   return (
@@ -80,6 +86,7 @@ export function BannerContactForm() {
         </select>
         <button className="button" type="submit">Nhận báo giá</button>
       </div>
+      {loading && <Loading message="Đang gửi mail ..." />}
     </form>
   );
 }

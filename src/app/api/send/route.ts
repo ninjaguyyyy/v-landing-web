@@ -11,7 +11,7 @@ export async function POST(req: NextRequest) {
 
     const { data, error } = await resend.emails.send({
       from: 'V Landing Web <onboarding@resend.dev>',
-      to: ['2011hoanghuong@gmail.com'],
+      to: ['lienho0304@gmail.com'],
       subject: 'Cung cấp báo giá và tư vấn',
       react: EmailTemplate({ customer: body }),
     });

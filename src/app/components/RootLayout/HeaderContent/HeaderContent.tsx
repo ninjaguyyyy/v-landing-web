@@ -14,10 +14,15 @@ export function HeaderContent() {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   }
+  const scrollToTop = (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
 
   return (
     <>
-      <Image src={Logo} alt={'logo'} className={classes.logo} />
+      <Image src={Logo} alt={'logo'} className={classes.logo} onClick={scrollToTop} />
       <Menu
         theme="dark"
         mode="horizontal"

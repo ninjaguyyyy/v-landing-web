@@ -13,6 +13,8 @@ import {
 import classes from './FooterContent.module.scss';
 
 export function FooterContent() {
+
+
   return (
     <div className={classes.container}>
       <Image src={Logo} alt="logo" className="logo" />
@@ -26,12 +28,12 @@ export function FooterContent() {
             />
             <FooterItem
               icon={<HiPhone />}
-              text="Hotline: 028.66.830.930 - 0938.17.22.94"
+              text="Hotline: 0977678488"
             />
-            <FooterItem icon={<HiMiniEnvelope />} text="Email: info@tktg.vn" />
+            <FooterItem icon={<HiMiniEnvelope />} text="2011hoanghuong@gmail.com" />
             <FooterItem
               icon={<HiGlobeAlt />}
-              text="Website: https://tktg.vn/"
+              text="Website: https://www.nhasachlongan.com/"
             />
           </ul>
         </div>
