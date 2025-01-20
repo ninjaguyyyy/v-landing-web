@@ -1,7 +1,6 @@
 import { Menu } from 'antd';
 import React from 'react';
 import Image from 'next/image';
-import Logo from 'statics/images/logo.png';
 import Phone from 'statics/images/phone.svg';
 import classes from './HeaderContent.module.scss';
 import { MENU } from 'constants/menu';
@@ -22,7 +21,7 @@ export function HeaderContent() {
 
   return (
     <>
-      <Image src={Logo} alt={'logo'} className={classes.logo} onClick={scrollToTop} />
+      <div className='text-red bg-yellow-400 leading-8 rounded px-3 bold text-[20px] font-bold'>Nhà sạch Long An </div>
       <Menu
         theme="dark"
         mode="horizontal"
@@ -33,7 +32,7 @@ export function HeaderContent() {
 
       <div className={classes['phone-group']}>
         <Image src={Phone} alt="contact" />
-        <div className="phone-no">09.38.17.22.94</div>
+        <div className="phone-no">09.77.67.84.88</div>
       </div>
     </>
   );

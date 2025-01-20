@@ -42,7 +42,7 @@ export const Service1 = ({ title, description, content, image }: ServiceProps) =
           <Button className='rounded'>
             Liên hệ
             <br />
-            09.38.17.22.94
+            09.77.67.84.88
           </Button>
         </div>
 
@@ -83,7 +83,7 @@ export const Service2 = ({ title, description, content, image }: ServiceProps) =
           <Button className='rounded'>
             Liên hệ
             <br />
-            09.38.17.22.94
+            09.77.67.84.88
           </Button>
         </div>
       </div>

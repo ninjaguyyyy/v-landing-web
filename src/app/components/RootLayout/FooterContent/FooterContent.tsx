@@ -17,7 +17,7 @@ export function FooterContent() {
 
   return (
     <div className={classes.container}>
-      <Image src={Logo} alt="logo" className="logo" />
+      <div className='text-red bg-yellow-400 leading-8 rounded px-3 bold text-[20px] font-bold'>Nhà sạch Long An </div>
       <div className="list-wrapper">
         <div className="flex-3">
           <h4 className="heading-title">TKT COMPANY</h4>
