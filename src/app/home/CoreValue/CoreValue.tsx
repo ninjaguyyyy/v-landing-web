@@ -182,7 +182,7 @@ export function CoreValue() {
                   <Button className="rounded">
                     Liên hệ
                     <br />
-                    09.38.17.22.94
+                    09.77.67.84.88
                   </Button>
                 </div>
               </div>

@@ -42,11 +42,7 @@ const ServiceItem = ({ title, price, button, index }: { title: string, price: st
 
 const ImageItem = () => {
   return (<div className='md:relative flex flex-col items-center justify-center mx-auto'>
-    <Image src={highlightService1} alt='highlight service' className='w-4/5 h-auto ' />
-    <div className='flex gap-x-2 justify-center items-center mt-2'>
-      <Image src={highlightService2} alt='highlight service' className='w-2/5 h-auto ' />
-      <Image src={highlightService3} alt='highlight service' className='w-2/5 h-auto ' />
-    </div>
+    <Image src={highlightService1} alt='highlight service' className='w-4/5 h-auto max-w-[500px] max-h-[600px]' />
   </div>
   )
 }
