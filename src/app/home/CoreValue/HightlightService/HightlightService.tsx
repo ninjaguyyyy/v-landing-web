@@ -55,7 +55,7 @@ export const HightlightService = () => {
       </div>
       <div className={classes['content']}>
         <div className="text-[18px] font-bold ">
-          CÙNG TKTCOMPANY KHÁM PHÁ
+          CÙNG NHA SACH LONG ANCOMPANY KHÁM PHÁ
         </div>
         <div className="text-[#051f4d] text-[30px] font-bold">DỊCH VỤ NỔI BẬT</div>
         <div className="text-yellow-primary text-[25px] font-bold">CÓ THỂ BẠN QUAN TÂM</div>

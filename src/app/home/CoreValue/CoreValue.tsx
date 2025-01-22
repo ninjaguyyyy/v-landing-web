@@ -164,10 +164,10 @@ export function CoreValue() {
                     Chuyên gia làm sạch công nghiệp tại LONG AN
                   </div>
                   <div className="text-title font-normal">
-                    Tại sao Khách hàng lựa chọn TKT?
+                    Tại sao Khách hàng lựa chọn NHA SACH LONG AN?
                   </div>
                   <div>
-                    TKT dẫn đầu lĩnh vực dịch vụ vệ sinh công nghiệp bằng việc
+                    NHA SACH LONG AN dẫn đầu lĩnh vực dịch vụ vệ sinh công nghiệp bằng việc
                     hợp tác với các chuyên gia, công ty làm sạch hàng đầu đến từ
                     Mỹ, Nhật, Ý,
                   </div>

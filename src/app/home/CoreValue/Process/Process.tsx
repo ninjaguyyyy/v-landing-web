@@ -2,7 +2,7 @@ const processItems = [
   {
     title: 'Nhận thông tin',
     content:
-      'TKT tiếp nhận thông tin về nhu cầu của khách hàng 24/7/365. Thông qua hotline, zalo OA hoặc email',
+      'NHA SACH LONG AN tiếp nhận thông tin về nhu cầu của khách hàng 24/7/365. Thông qua hotline, zalo OA hoặc email',
   },
   {
     title: 'Khảo sát trực tiếp',
@@ -17,7 +17,7 @@ const processItems = [
   {
     title: 'Tiến hành thực hiện dịch vụ',
     content:
-      'Sau khi hợp đồng được ký kết. TKT sẽ bố trí nhân viên đến và thực hiện công việc như trong thoả thuận ban đầu',
+      'Sau khi hợp đồng được ký kết. NHA SACH LONG AN sẽ bố trí nhân viên đến và thực hiện công việc như trong thoả thuận ban đầu',
   },
   {
     title: 'Kiểm tra sau thi công',
@@ -56,7 +56,7 @@ export const Process = () => {
     <div className="bg-gradient-to-r from-[#0d62f2] to-[#051f4d] md:absolute md:w-[1000px] flex md:flex-row flex-col gap-8 px-6 md:pl-10 md:pr-28 py-4 top-[228px] left-[30%] mt-6">
       <div className="text-white flex flex-col gap-y-4 w-[400px]">
         <div className="">
-          Tại TKT, chúng tôi có
+          Tại NHA SACH LONG AN, chúng tôi có
         </div>
         <div className="text-[32px]">
           Quy trình thực hiện
