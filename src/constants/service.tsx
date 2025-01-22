@@ -150,7 +150,7 @@ export const serviceContent = [
         "- Làm sạch toàn bộ trong và ngoài ngôi nhà, căn hộ, biệt thự",
         "- Làm sạch các phòng ngủ, bếp, khách, nhà tắm…",
         "- Làm sạch các nội thất (bàn, tủ, ghế sofa, đệm, rèm…)",
-        "Tiêu chí trong thực hiện dịch vụ vệ sinh nhà cửa của TKT Company là Cẩn thận và Tỉ mỉ trong việc làm sạch các chi tiết nhỏ nhất, góc cạnh khó làm nhất"
+        "Tiêu chí trong thực hiện dịch vụ vệ sinh nhà cửa của NHA SACH LONG AN là Cẩn thận và Tỉ mỉ trong việc làm sạch các chi tiết nhỏ nhất, góc cạnh khó làm nhất"
       ]
     }, {
       title: "Nội dung dịch vụ phụ thêm có thể bao gồm:",

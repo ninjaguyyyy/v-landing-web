@@ -112,7 +112,7 @@ export function CoreValue() {
         id={MenuKey.ABOUT_US}
       >
         <div className="w-full md:w-3/5">
-          <div className="text-yellow-primary text-h1">TKT COMPANY</div>
+          <div className="text-yellow-primary text-h1">NHA SACH LONG AN</div>
           <div className="text-h3">
             ĐƠN VỊ VỆ SINH ĐƯỢC YÊU MẾN HÀNG ĐẦU TẠI TP.HCM
           </div>
@@ -124,7 +124,7 @@ export function CoreValue() {
             </div>
             <div>
               Bằng cách cung cấp các giải pháp Trọn gói - Toàn Diện - Chuyên
-              Nghiệp - Giá Tốt Nhất, TKT Company mong muốn mang đến sự Hài Lòng
+              Nghiệp - Giá Tốt Nhất, NHA SACH LONG AN mong muốn mang đến sự Hài Lòng
               và Hiệu Quả nhất dành cho Khách Hàng. Cải tiến mỗi ngày để mang
               lại nhiều lợi ích hơn nữa cho mỗi khách hàng.
             </div>
@@ -157,7 +157,7 @@ export function CoreValue() {
             <div className="flex flex-col md:flex-row gap-x-8">
               <div className={classes['content']}>
                 <div className="bg-[#d2faf0] py-4 px-8 text-[24px]">
-                  TKT Company
+                  NHA SACH LONG AN
                 </div>
                 <div className="px-8 flex flex-col gap-y-4 mt-4 text-[16px] b">
                   <div className="w-full text-[20px]">
@@ -216,7 +216,7 @@ export function CoreValue() {
 
       <div className={classes['digital-marketing']}>
         <div className="font-bold text-[30px]">
-          Con số thú vị về TKT Company
+          Con số thú vị về NHA SACH LONG AN
         </div>
         <div className="flex flex-col md:flex-row gap-10">
           {' '}
