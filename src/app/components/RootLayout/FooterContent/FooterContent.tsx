@@ -52,7 +52,7 @@ export function FooterContent() {
         </div>
       </div>
       <div className="line"></div>
-      <div className="pt-4">©2020 Allrights reserved NHA SACH LONG ANg.vn</div>
+      <div className="pt-4">©2020 Allrights reserved nhasachlongan.com</div>
     </div>
   );
 }
