@@ -106,7 +106,7 @@ export function CoreValue() {
         />
       </div>
 
-      <p className="top-5">Vệ Sinh Công Nghiệp Top 5 tại Tp.HCM</p>
+      <p className="top-5">Vệ Sinh Công Nghiệp Top 5 tại LONG AN</p>
       <div
         className={classes['company-introduction-content']}
         id={MenuKey.ABOUT_US}
@@ -114,7 +114,7 @@ export function CoreValue() {
         <div className="w-full md:w-3/5">
           <div className="text-yellow-primary text-h1">NHA SACH LONG AN</div>
           <div className="text-h3">
-            ĐƠN VỊ VỆ SINH ĐƯỢC YÊU MẾN HÀNG ĐẦU TẠI TP.HCM
+            ĐƠN VỊ VỆ SINH ĐƯỢC YÊU MẾN HÀNG ĐẦU TẠI LONG AN
           </div>
           <div className="text-h5 flex flex-col gap-y-4">
             <div>
@@ -161,7 +161,7 @@ export function CoreValue() {
                 </div>
                 <div className="px-8 flex flex-col gap-y-4 mt-4 text-[16px] b">
                   <div className="w-full text-[20px]">
-                    Chuyên gia làm sạch công nghiệp tại Tp.HCM
+                    Chuyên gia làm sạch công nghiệp tại LONG AN
                   </div>
                   <div className="text-title font-normal">
                     Tại sao Khách hàng lựa chọn TKT?
